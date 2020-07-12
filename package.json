@@ -1,0 +1,42 @@
+{
+  "name": "united_airline_crawler",
+  "version": "0.1.0",
+  "description": "Create a screenshot flights from SFO to PVG",
+  "main": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "snapshot",
+    "United Airlines"
+  ],
+  "files": [
+    "bin",
+    "dist",
+    "package.json"
+  ],
+  "author": "Situ Ma",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^14.0.14",
+    "commander": "^5.1.0",
+    "date-fns": "^2.6.0",
+    "dotenv": "^8.2.0",
+    "events": "^3.1.0",
+    "puppeteer": "^2.0.0",
+    "puppeteer-extra": "^3.1.9",
+    "puppeteer-extra-plugin-stealth": "^2.4.9",
+    "twilio": "^3.48.0"
+  },
+  "devDependencies": {
+    "puppeteer-tsd": "0.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6",
+    "@types/date-fns": "^2.6.0"
+  },
+  "bin": {
+    "siteshot": "bin/siteshot"
+  }
+}
